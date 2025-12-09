@@ -47,6 +47,9 @@ export const Pricing = () => {
                         <div className="my-8">
                             <span className="text-4xl font-extrabold text-gray-900">Uso</span>
                             <span className="text-gray-500 font-medium"> / por etiqueta</span>
+                            <p className="text-xs text-orange-600 mt-2 font-medium bg-orange-50 inline-block px-2 py-1 rounded">
+                                Pequeña comisión por envío generado
+                            </p>
                         </div>
                         <ul className="space-y-4 mb-8 flex-1">
                             <li className="flex text-sm text-gray-600">
