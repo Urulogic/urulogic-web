@@ -15,16 +15,16 @@ export const Features = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+                <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                     {/* Shopify App Card */}
-                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                    <div className="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 group">
                         <div className="p-8 sm:p-10">
-                            <div className="h-12 w-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                            <div className="h-14 w-14 bg-green-50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
                                 <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                                 </svg>
                             </div>
-                            <h3 className="text-2xl font-bold text-gray-900">Urulogic Shopify App</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">Urulogic Shopify App</h3>
                             <p className="mt-4 text-lg text-gray-500">
                                 La solución plug-and-play para tiendas Shopify. Instala nuestra app y conecta automáticamente con los carriers sin escribir una sola línea de código.
                             </p>
@@ -54,14 +54,14 @@ export const Features = () => {
                     </div>
 
                     {/* API Card */}
-                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                    <div className="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 group">
                         <div className="p-8 sm:p-10">
-                            <div className="h-12 w-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                            <div className="h-14 w-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
                                 <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                 </svg>
                             </div>
-                            <h3 className="text-2xl font-bold text-gray-900">Urulogic API</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors">Urulogic API</h3>
                             <p className="mt-4 text-lg text-gray-500">
                                 Una API unificada para todos los servicios de logística de Uruguay. Integra envíos en tu propio software, ERP o plataforma custom.
                             </p>

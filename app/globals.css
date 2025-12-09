@@ -5,7 +5,8 @@
   --color-uru-blue: #0038A8;
   --color-logic-grey: #444444;
   --color-brand-orange: #F5B445;
-  
+  --color-light-bg: #F8FAFC;
+
   --background: #ffffff;
   --foreground: var(--color-logic-grey);
 }
@@ -13,12 +14,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   /* Urulogic Palette */
   --color-primary: var(--color-uru-blue);
   --color-secondary: var(--color-logic-grey);
   --color-accent: var(--color-brand-orange);
-  
+
   --font-sans: var(--font-raleway), ui-sans-serif, system-ui, sans-serif;
 }
 

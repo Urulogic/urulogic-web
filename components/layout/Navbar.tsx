@@ -9,21 +9,21 @@ export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
-            <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center">
+        <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-xl transition-all">
+            <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center gap-12">
                     <Logo />
                     <div className="hidden md:ml-10 md:flex md:space-x-8">
-                        <Link href="#products" className="text-sm font-medium text-gray-700 hover:text-primary transition-colors">
+                        <Link href="#products" className="text-sm font-semibold text-gray-600 hover:text-primary transition-colors">
                             Productos
                         </Link>
-                        <Link href="#pricing" className="text-sm font-medium text-gray-700 hover:text-primary transition-colors">
+                        <Link href="#pricing" className="text-sm font-semibold text-gray-600 hover:text-primary transition-colors">
                             Precios
                         </Link>
-                        <Link href="https://developers.urulogic.com" target="_blank" className="text-sm font-medium text-gray-700 hover:text-primary transition-colors">
+                        <Link href="https://developers.urulogic.com" target="_blank" className="text-sm font-semibold text-gray-600 hover:text-primary transition-colors">
                             Developers
                         </Link>
-                        <Link href="#contact" className="text-sm font-medium text-gray-700 hover:text-primary transition-colors">
+                        <Link href="#contact" className="text-sm font-semibold text-gray-600 hover:text-primary transition-colors">
                             Contacto
                         </Link>
                     </div>

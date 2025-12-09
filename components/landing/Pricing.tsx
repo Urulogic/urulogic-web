@@ -14,62 +14,58 @@ export const Pricing = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                    {/* Free / Test Plan */}
-                    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col hover:border-blue-200 transition-colors">
-                        <h3 className="text-xl font-semibold text-gray-900">Developer / Test</h3>
-                        <p className="mt-4 text-gray-500 text-sm">Ideal para integrar y probar nuestra API sin costo.</p>
+                <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    {/* Sandbox Plan */}
+                    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col hover:border-gray-300 transition-colors">
+                        <h3 className="text-xl font-bold text-gray-900">Sandbox / Desarrollo</h3>
+                        <p className="mt-4 text-gray-500">Todo lo que necesitas para integrar y testear.</p>
                         <div className="my-8">
                             <span className="text-4xl font-extrabold text-gray-900">$0</span>
-                            <span className="text-gray-500">/mes</span>
+                            <span className="text-gray-500 font-medium"> /mes</span>
                         </div>
                         <ul className="space-y-4 mb-8 flex-1">
-                            <li className="flex text-sm text-gray-600">✓ Acceso completo a Sandbox</li>
-                            <li className="flex text-sm text-gray-600">✓ Documentación completa</li>
-                            <li className="flex text-sm text-gray-600">✓ Soporte vía email</li>
+                            <li className="flex text-sm text-gray-600">✓ Ambiente de pruebas ilimitado</li>
+                            <li className="flex text-sm text-gray-600">✓ Acceso completo a la API</li>
+                            <li className="flex text-sm text-gray-600">✓ Documentación técnica</li>
+                            <li className="flex text-sm text-gray-600">✓ Etiquetas de prueba</li>
                         </ul>
                         <Link href="https://developers.urulogic.com" target="_blank">
-                            <Button variant="outline" className="w-full">Documentación</Button>
+                            <Button variant="outline" className="w-full">
+                                Ver Documentación
+                            </Button>
                         </Link>
                     </div>
 
-                    {/* Shopify App Plan */}
-                    <div className="bg-white rounded-2xl shadow-xl border-2 border-primary p-8 flex flex-col relative transform md:-translate-y-4">
+                    {/* Production Plan */}
+                    <div className="bg-white rounded-2xl shadow-xl border-2 border-primary p-8 flex flex-col relative">
                         <div className="absolute top-0 right-0 left-0 bg-primary h-2 rounded-t-xl"></div>
-                        <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                            Popular
+                        <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                            Recomendado
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-900">Shopify Merchant</h3>
-                        <p className="mt-4 text-gray-500 text-sm">Para tiendas que quieren automatizar su logística.</p>
+                        <h3 className="text-xl font-bold text-primary">Producción</h3>
+                        <p className="mt-4 text-gray-500">Paga solo por lo que usas. Sin costos ocultos.</p>
                         <div className="my-8">
-                            <span className="text-4xl font-extrabold text-gray-900">$29</span>
-                            <span className="text-gray-500">/mes</span>
+                            <span className="text-4xl font-extrabold text-gray-900">Uso</span>
+                            <span className="text-gray-500 font-medium"> / por etiqueta</span>
                         </div>
                         <ul className="space-y-4 mb-8 flex-1">
-                            <li className="flex text-sm text-gray-600">✓ Envíos ilimitados</li>
-                            <li className="flex text-sm text-gray-600">✓ Tu propia cuenta de carrier</li>
-                            <li className="flex text-sm text-gray-600">✓ Tracking automático</li>
-                            <li className="flex text-sm text-gray-600">✓ Soporte prioritario</li>
+                            <li className="flex text-sm text-gray-600">
+                                <span className="text-primary mr-2">✓</span> Sin costos mensuales fijos
+                            </li>
+                            <li className="flex text-sm text-gray-600">
+                                <span className="text-primary mr-2">✓</span> Etiquetas productivas oficiales
+                            </li>
+                            <li className="flex text-sm text-gray-600">
+                                <span className="text-primary mr-2">✓</span> Tracking en tiempo real
+                            </li>
+                            <li className="flex text-sm text-gray-600">
+                                <span className="text-primary mr-2">✓</span> Soporte prioritario por email
+                            </li>
                         </ul>
                         <Link href="/signup">
-                            <Button className="w-full">Comenzar Prueba Gratis</Button>
-                        </Link>
-                    </div>
-
-                    {/* Enterprise Plan */}
-                    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col hover:border-blue-200 transition-colors">
-                        <h3 className="text-xl font-semibold text-gray-900">Enterprise</h3>
-                        <p className="mt-4 text-gray-500 text-sm">Para altos volúmenes y necesidades personalizadas.</p>
-                        <div className="my-8">
-                            <span className="text-4xl font-extrabold text-gray-900">Custom</span>
-                        </div>
-                        <ul className="space-y-4 mb-8 flex-1">
-                            <li className="flex text-sm text-gray-600">✓ SLA garantizado</li>
-                            <li className="flex text-sm text-gray-600">✓ Integraciones a medida</li>
-                            <li className="flex text-sm text-gray-600">✓ Account Manager dedicado</li>
-                        </ul>
-                        <Link href="#contact">
-                            <Button variant="outline" className="w-full">Contactar Ventas</Button>
+                            <Button variant="primary" className="w-full">
+                                Comenzar Ahora
+                            </Button>
                         </Link>
                     </div>
                 </div>
